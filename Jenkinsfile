@@ -1,7 +1,9 @@
 pipeline {
 	    agent any
-		stages{
+		stages {
+
 			stage('Build'){
+
 				steps{
 				echo"Build"
 				
@@ -9,6 +11,7 @@ pipeline {
 				}
 			}
 				stage('Test'){
+
 				steps{
 				
 				echo"Test"
@@ -17,6 +20,7 @@ pipeline {
 				}
 			}
 				stage('Integration Test'){
+					
 				steps{
 				
 				echo"Integration Test"
@@ -24,7 +28,8 @@ pipeline {
 				}
 			}
 			
-		}post{
+		}
+		post{
 			always{
 				echo "im awesome i Run Always "
 			}
@@ -35,8 +40,4 @@ pipeline {
 				echo "I run When i Fail" 
 			}
 		}
-		
-	
-	
-
 }
