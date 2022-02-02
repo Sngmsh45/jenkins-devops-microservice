@@ -20,7 +20,7 @@ pipeline {
 				}
 			}
 				stage('Integration Test'){
-					
+
 				steps{
 				
 				echo"Integration Test"
@@ -33,7 +33,7 @@ pipeline {
 			always{
 				echo "im awesome i Run Always "
 			}
-			sucess{
+			success{
 				echo "i run oly when ur Sucessful "
 			}
 			failure{
